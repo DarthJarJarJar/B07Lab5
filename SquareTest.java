@@ -39,7 +39,8 @@ class SquareTest {
 
     @Test
     public void testConstructorPointD() {
-        Point A = new Point(0, 0);
+    	// creating points
+        Point A = new Point(0, 0); 
         Point B = new Point(0, 1);
         Point C = new Point(1, 1);
         Point D = new Point(1, 0);
@@ -67,7 +68,7 @@ class SquareTest {
         Point C = new Point(1, 1);
         Point D = new Point(1, 0);
         Sqaure square = new Sqaure(A, B, C, D);
-
+        
         double expectedArea = A.distance(B) * A.distance(C);
         assertEquals(expectedArea, square.area(), 1e-9);
     }
